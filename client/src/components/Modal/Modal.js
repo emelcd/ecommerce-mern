@@ -2,12 +2,10 @@ import "./Modal.css";
 import minus from "./minus.svg";
 import plus from "./plus.svg";
 import card from "../Header/shop.svg";
-import { useContext } from "react";
 
 import ShopContext from "../../context/shop-context";
 
 const buyItems = (data) => {
-  console.log(data);
   fetch('http://localhost:4000/buy', {
       method: 'POST',
       headers: {
@@ -17,8 +15,12 @@ const buyItems = (data) => {
   })
   .then(res => res.json())  
   .then(data => {
-      console.log(data);
+      if (data.status === 201) {
+        window.location.href = '/';
+      }
+
   })
+  .catch(err => console.log(err));
 };
 
 const Modal = (data) => {
@@ -30,12 +32,12 @@ const Modal = (data) => {
             
           {data.data.map((i) => {
             return (
-              <div id={i.id} className="item-container">
+              <div key={i.id} className="item-container">
 
                 <div className="item-title">
                   {i.title}
                 </div>
-                  <div className="item-quantity">{i.quantity}</div>
+                  <div className="item-quantity">{i.quantity} x {i.price} $</div>
                 <div className="item-qua">
                   <div
                     onClick={context.removeProductFromCart.bind(this, i.id)}
@@ -61,7 +63,7 @@ const Modal = (data) => {
             <span className="total-q">
              {context.cart.map((i)=>{
                 return i.price * i.quantity
-            }).reduce((a,b)=>a+b, 0).toPrecision(5)} $</span></div> : null}
+            }).reduce((a,b)=>a+b, 0).toPrecision(4)} $</span></div> : null}
         </div>
         <div className="item-action">
             <button onClick={()=>{

@@ -9,13 +9,13 @@ import ShopContext from "../../context/shop-context";
 const Products = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("http://localhost:4000/products")
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
       });
   }, []);
-  const [ isVisible, setIsVisible ] = useState(true);
+  const [ isVisible, setIsVisible ] = useState(false);
 
   const toggleVisibility = () => {
     setIsVisible(!isVisible);
