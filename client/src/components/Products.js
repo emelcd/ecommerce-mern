@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Products.css";
+import star from "./star.svg";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -7,7 +8,7 @@ const Products = () => {
     fetch("https://fakestoreapi.com/products")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        console.log(data[0]);
         setProducts(data);
       });
   }, []);
@@ -28,14 +29,17 @@ const Products = () => {
               </div>
             </div>
             <div className="card-footer">
-
-            <div className="card-description">{product.description}</div>
-            <div className="btn-group">
-              <div className="btn">
-                <a href="">Buy Now</a>
+              <div className="card-description">{product.description}</div>
+              <div className="card-stars">
+                <img className="card-star" src={star} alt="star" />
+                <span>{product.rating.rate}</span>
               </div>
-              <a href=""> Cancel</a>
-            </div>
+              <div className="btn-group">
+                <div className="btn">
+                  <a href="">Add to Cart</a>
+                </div>
+                <a href=""> Cancel</a>
+              </div>
             </div>
           </div>
         </div>

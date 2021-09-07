@@ -1,4 +1,5 @@
 import "./Header.css";
+import card from "./shop.svg";
 
 const Header = () => {
   // make a header for a eCommerce with a logo and a search bar
@@ -19,7 +20,7 @@ const Header = () => {
         <span className="cart-badge">2</span>
         <img
           className="cart-img"
-          src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png"
+          src={card}
           alt="shopping cart"
         />
       </div>
