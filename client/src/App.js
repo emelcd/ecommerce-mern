@@ -1,16 +1,16 @@
-import './App.css';
+import "./App.css";
 
-import Header from "./components/Header/Header";
 import Products from "./components/Products/Products";
+
+import GlobalState from "./context/GlobalState";
+
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Products />
-    </div>
+    <GlobalState>
+        <Products />
+    </GlobalState>
   );
 }
 
 export default App;
-

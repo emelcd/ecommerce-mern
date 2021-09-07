@@ -57,6 +57,7 @@ header {
 
 .search button:hover {
   color: #fff;
+  cursor: pointer;
 }
 
 .cart {
@@ -73,6 +74,7 @@ header {
 
 .cart img {
   height: 30px;
+  cursor: pointer;
 }
 
 .cart span {

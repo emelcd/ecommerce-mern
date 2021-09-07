@@ -1,7 +1,7 @@
 import "./Header.css";
 import card from "./shop.svg";
 
-const Header = ({n=5}) => {
+const Header = ({count=5, handler}) => {
   // make a header for a eCommerce with a logo and a search bar
   return (
     <header>
@@ -17,8 +17,9 @@ const Header = ({n=5}) => {
         <button>Search 🔎</button>
       </div>
       <div className="cart">
-        <span className="cart-badge">{n}</span>
+        <span className="cart-badge">{count}</span>
         <img
+         onClick={handler}
           className="cart-img"
           src={card}
           alt="shopping cart"

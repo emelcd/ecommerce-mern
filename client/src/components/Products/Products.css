@@ -147,4 +147,8 @@ body {
   width: 20px;
   height: 20px;
 }
+
+.btn {
+  cursor: pointer;
+}
 /*# sourceMappingURL=Products.css.map */

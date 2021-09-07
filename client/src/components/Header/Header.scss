@@ -37,7 +37,9 @@ header {
     transition: all 2s;
     &:hover {
         color : #fff;
+        cursor: pointer;
     }
+
 
   }
 }
@@ -49,6 +51,7 @@ header {
     
     img {
       height: 30px;
+      cursor: pointer;
     }
   span {
     position: absolute;
@@ -63,6 +66,8 @@ header {
     top: .1px;
     margin-left: 20px;
   }
+
+
 }
 
 
