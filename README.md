@@ -10,7 +10,8 @@ A full-stack eCommerce application built with the MERN stack.
 
 ## Features 🔎
 
-MongoDB - NoSQL database
-Express - RESTful API
-React JS - useContext() hook over the CART
-NodeJS - Server
+
+1. MongoDB - NoSQL database 
+2. Express - RESTful API
+3. React JS - useContext() hook over the CART
+4. NodeJS - Server
