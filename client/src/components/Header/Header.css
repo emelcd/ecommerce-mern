@@ -26,7 +26,20 @@ header {
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  header {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .search {
+    padding: 1rem;
+  }
 }
 
 .search {
@@ -40,24 +53,29 @@ header {
   height: 50px;
   border: none;
   border-radius: 5px;
-  padding: 0 0.5rem;
+  padding: 0 0.7rem;
   font-size: 1.2rem;
   background-color: #f5f5f5;
   color: #333;
 }
 
+.search input:focus {
+  outline: none;
+}
+
 .search button {
   border: none;
   border-radius: 5px;
-  background-color: #4a48c9;
   cursor: pointer;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  font-size: 1rem;
+  background: none;
 }
 
 .search button:hover {
-  color: #fff;
   cursor: pointer;
+  background: #f5f5f5;
 }
 
 .cart {
@@ -70,6 +88,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .cart img {
@@ -81,14 +100,14 @@ header {
   position: absolute;
   -webkit-transform: translateX(8px);
           transform: translateX(8px);
-  font-size: 10px;
+  font-size: .9rem;
   line-height: 0;
-  font-weight: 500;
-  color: #fff;
+  font-weight: bold;
+  color: black;
   padding: 1em 0.7em;
   border-radius: 100vh;
   background-color: #ff5a5f;
-  top: .1px;
   margin-left: 20px;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=Header.css.map */

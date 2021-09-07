@@ -6,6 +6,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #e4e3e3;
 }
 
 .item-container {
@@ -19,6 +20,7 @@
   max-width: 400px;
   padding: 1rem;
   border: 1px solid #ccc;
+  background-color: #fff;
 }
 
 .item-title {
@@ -64,6 +66,7 @@
 .total-q {
   font-size: 1.5rem;
   padding: 1rem;
+  color: #444444;
 }
 
 .item-action {
@@ -79,14 +82,15 @@
 .item-action button {
   margin-right: 1rem;
   border: none;
-  background: none;
   font-size: 1.3rem;
+  background: none;
   cursor: pointer;
   font-weight: bold;
+  text-transform: uppercase;
   color: #00bcd4;
 }
 
 .item-action button:hover {
-  color: #00aa22;
+  color: #000000;
 }
 /*# sourceMappingURL=Modal.css.map */

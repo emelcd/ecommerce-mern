@@ -3,6 +3,7 @@
     text-align: justify;
     display: grid;
     justify-content: center;
+    background-color: rgb(228, 227, 227);
     
 }
 .item-container {
@@ -14,6 +15,8 @@
     max-width: 400px;
     padding: 1rem;
     border : 1px solid #ccc;
+    background-color: #fff;
+    
 }
 .item-title {
     // clamp line
@@ -52,6 +55,7 @@
 .total-q {
     font-size: 1.5rem;
     padding: 1rem;
+    color : rgb(68, 68, 68);
 }
 
 .item-action {
@@ -62,13 +66,14 @@
     button {
         margin-right: 1rem;
         border: none;
-        background: none;
         font-size: 1.3rem;
+        background: none;
         cursor: pointer;
         font-weight: bold;
+        text-transform: uppercase;
         color: #00bcd4;
         &:hover {
-            color: #00aa22;
+            color: #000000;
         }
 
     }

@@ -74,7 +74,8 @@ app.post("/buy", (req, res) => {
         const ticket = new ticketShop(obj);
         ticket.save();
         res.send({
-            status: 201
+            status: 201,
+            ticket : obj
         });
     }
     catch (error) {

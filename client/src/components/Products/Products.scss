@@ -48,7 +48,7 @@ body {
   font-size: 14px;
 }
 
-.view-btn a {
+.view-btn span {
   padding: 5px 15px;
   border: 1.5px solid #007bff;
   border-radius: 3px;
@@ -62,7 +62,7 @@ body {
   align-items: center;
 }
 
-.btn-group .btn a {
+.btn-group .btn span {
   padding: 5px 15px;
   background-color: #28a745;
   color: #fff;
@@ -85,6 +85,12 @@ body {
     -webkit-box-orient: vertical;
     font-size: 14px;
     padding: 5px;
+  }
+  span {
+    font-size: 14px;
+    color: #3d3d3d;
+    margin-left: 5px;
+    font-family: "Times New Roman", Times, serif;
   }
 }
 .card-description {
@@ -113,9 +119,57 @@ body {
   img {
     width: 20px;
     height: 20px;
+    margin-right: 10px;
   }
 }
 
 .btn {
   cursor: pointer;
+}
+
+.card-footer-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-votes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem;
+  width: 33%;
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+  }
+
+}
+
+.category-container {
+  padding: 1rem;
+  margin: 0 auto;
+  width: 80%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  .category {
+    padding: 0.3rem;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 0.5rem;
+    .item {
+      cursor: pointer;
+      font-family: 'Courier New', Courier, monospace;
+      transition: all 1s;
+      background-color: #fff;
+      &:hover {
+        color: #000;
+      }
+    }    
+  }
 }

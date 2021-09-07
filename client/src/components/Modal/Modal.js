@@ -6,6 +6,9 @@ import card from "../Header/shop.svg";
 import ShopContext from "../../context/shop-context";
 
 const buyItems = (data) => {
+  if(data.length === 0){
+    return
+  }
   fetch('http://localhost:4000/buy', {
       method: 'POST',
       headers: {
@@ -16,6 +19,7 @@ const buyItems = (data) => {
   .then(res => res.json())  
   .then(data => {
       if (data.status === 201) {
+        alert(`Your Ticket:\nRef: ${data.ticket.id} \nDate: ${data.ticket.date}\nTotal Amount: ${data.ticket.products.map((i)=>i.price*i.quantity).reduce((a,b)=>a+b)} $`)
         window.location.href = '/';
       }
 

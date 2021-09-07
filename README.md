@@ -22,9 +22,20 @@ A full-stack eCommerce application built with the MERN stack.
     npm install || yarn install
     node server.js || nodemon server.js
 
-## Features 🔎
+## Builded With 🧰
 
-1. MongoDB - NoSQL database 
+1. MongoDB - NoSQL database
 2. Express - RESTful API
 3. React JS - useContext() hook over the CART
 4. NodeJS - Server
+
+- ReactJs / SASS / ReactHooks
+- mongoose / uuid / body-parser 
+
+## Features
+
+1. Api Consumtion
+2. Search By Input or By Category
+3. Save To Server
+
+
