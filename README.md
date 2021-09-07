@@ -30,12 +30,10 @@ A full-stack eCommerce application built with the MERN stack.
 4. NodeJS - Server
 
 - ReactJs / SASS / ReactHooks
-- mongoose / uuid / body-parser 
+- mongoose / uuid / body-parser
 
 ## Features
 
 1. Api Consumtion
 2. Search By Input or By Category
 3. Save To Server
-
-
