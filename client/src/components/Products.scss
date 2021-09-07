@@ -13,6 +13,7 @@ body {
   margin: 20px;
   justify-items: center;
  align-items: center;
+ margin-top: 50px;
   
 }
 
@@ -61,7 +62,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
 }
 
 .btn-group .btn a {
@@ -86,21 +86,24 @@ body {
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         font-size: 14px;
-        width: 58%;
+        padding: 5px;
 
     }
 }
 .card-description {
-
-    // hide the overflow over 200px
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    // set the white-space
-    // set the display
+}
 
 
 
+.card-footer {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
 }

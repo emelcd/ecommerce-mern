@@ -18,6 +18,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 50px;
 }
 
 .card {
@@ -82,7 +83,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
 }
 
 .btn-group .btn a {
@@ -106,7 +106,7 @@ body {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   font-size: 14px;
-  width: 58%;
+  padding: 5px;
 }
 
 .card-description {
@@ -115,5 +115,17 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.card-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (minmax(100px, 1fr))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=Products.css.map */
