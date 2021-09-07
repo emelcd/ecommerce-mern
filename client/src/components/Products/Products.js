@@ -36,9 +36,9 @@ const Products = () => {
               </div>
               <div className="btn-group">
                 <div className="btn">
-                  <a href="">Add to Cart</a>
+                  <a>Add to Cart</a>
                 </div>
-                <a href=""> Cancel</a>
+                <a> Cancel</a>
               </div>
             </div>
           </div>
