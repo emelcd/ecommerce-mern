@@ -1,0 +1,92 @@
+.item {
+  font-size: 1rem;
+  text-align: justify;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-container {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  min-width: 400px;
+  max-width: 400px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.item-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 1.2rem;
+}
+
+.item-qua {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-quantity {
+  text-align: right;
+  font-size: 32px;
+  margin-left: 1rem;
+}
+
+.item-img {
+  width: 48px;
+  position: absolute;
+  margin-top: 2rem;
+}
+
+.item-total {
+  font-size: 1.2rem;
+  text-align: right;
+  border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+}
+
+.total-q {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.item-action {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.item-action button {
+  margin-right: 1rem;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+.item-action button:hover {
+  color: #00aa22;
+}
+/*# sourceMappingURL=Modal.css.map */
